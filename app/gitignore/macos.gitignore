@@ -29,10 +29,10 @@ Temporary Items
 .apdisk
 
 # Other file types
-.ai
-.xd
-.eps
-.psd
+*.ai
+*.xd
+*.eps
+*.psd
 *.pyc
 *.pyo
 *.pyc
