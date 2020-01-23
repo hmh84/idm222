@@ -2,15 +2,34 @@ html {
     box-sizing: border-box;
     font-size: 100%;
 }
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
 
+@font-face {
+    font-family: 'offerings';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/offerings_regular-webfont.woff') format('woff2'),
+        url('../font/offerings_regular-webfont.woff') format('woff');
+}
+
+:root {
+    --tra-blk: rgba(0, 0, 0, .85);
+    --acc-col: #4dc0ff;
+
+    --primary-black: var(--tra-blk);
+    --primary-accent: var(--acc-col);
+}
+
 header {
+    position: fixed;
+    z-index: 10;
     height: 75px;
-    background-color: #3e3e3e;
+    background-color: var(--primary-black);
     width: 100vw;
     color: white;
 }
@@ -31,31 +50,44 @@ header h1 {
     padding: 1.5rem;
 }
 
+.spacer {
+    width: 100%;
+    height: 75px;
+}
+
 h1 {
     font-size: 1.5rem;
 }
+
 .placeHolder {
     float: left;
 }
+
 #sideBar {
     font-size: 1.2rem;
     position: fixed;
+    z-index: 5;
     width: 125px;
     height: 100%;
     background-color: #808080ab;
     color: white;
     transition: all 500ms linear;
+    margin-top: 75px;
 }
+
 .sideBar_inactive {
     right: -175px;
 }
+
 .sideBar_active {
     right: 0;
 }
+
 #sideBar ul li {
     padding: 15px;
     border-bottom: 1px solid white;
 }
+
 .toggleButton span {
     display: block;
     width: 30px;
@@ -63,8 +95,48 @@ h1 {
     background-color: white;
     margin: 5px 0;
 }
+
 .toggleButton {
     position: fixed;
+    z-index: 15;
     right: 5%;
     top: 2.5%;
+}
+
+/*Rows*/
+
+.row {
+    width: 90%;
+    margin: 5%;
+}
+
+.column {
+    width: 100%;
+    float: left;
+    margin: 0%;
+}
+
+@media screen and (min-width: 450px) {
+    .column {
+        overflow: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .column {
+        overflow: auto;
+        width: 33%;
+    }
+}
+
+.row img {
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    text-align: center;
 }
