@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <title>Hunter H Design</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hunter Hampton</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <link rel="icon" href="graphics/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -16,10 +17,11 @@
         <a href="index.html">
             <img src="graphics/logo.png" alt="Logo">
         </a>
-        <h1>
-            Hunter Hampton
-        </h1>
-        <div class="placeHolder"></div>
+        <div class="title">
+            <h1>
+                Hunter H Design
+            </h1>
+        </div>
         <div class="toggleButton" onclick="toggleSideBar();">
             <span></span>
             <span></span>
@@ -28,27 +30,91 @@
     </header>
     <div id="sideBar" class="sideBar_inactive">
         <ul>
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Resume</li>
-            <li>Contact</li>
+            <a href="index.html">
+                <li>
+                    <img src="graphics/home.svg" alt="">
+                    <h2>Home</h2>
+                </li>
+            </a>
+            <a href="portfolio/portfolio.html">
+                <li>
+                    <img src="graphics/portfolio.svg" alt="">
+                    <h2>Portfolio</h2>
+                </li>
+            </a>
+            <a href="resume/resume.html">
+                <li>
+                    <img src="graphics/resume.svg" alt="">
+                    <h2>Resume</h2>
+                </li>
+            </a>
+            <a href="contact/contact.html">
+                <li>
+                    <img src="graphics/contact.svg" alt="">
+                    <h2>Contact</h2>
+                </li>
+            </a>
         </ul>
     </div>
-    <main>
-        <div class="spacer"></div>
-        <div class="row">
-            <div class="column">
-                <a href="portfolio/digitalMedia/index.html"><img src="graphics/digital_media.svg" alt="Digital Media"></a>
-                <div class="title">Digital Media</div>
+    <div class="main">
+        <!--        <div class="spacer"></div>-->
+        <div class="section_1">
+            <img src="graphics/top_line.jpg" alt="Top Line Graphic">
+            <h1>Hi, I'm Hunter</h1>
+        </div>
+        <div class="bioText">
+            <p1>I’m a freelance designer specializing in web and graphic design based in Philadelphia.</p1>
+        </div>
+        <div class="section_2">
+            <h1>What I can do for you</h1>
+            <div class="service">
+                <h2>Web Design</h2>
+                <a href="http://www.hunterhdesign.com/zodiac" target="_blank"><img src="graphics/webDesign.jpg" alt="Zodiac Site"></a>
+                <p1>Knowledge of HTML5, CSS3, and JavaScript give me the ability to produce custom designed web presence for small businesses.</p1>
             </div>
-            <div class="column">
-                <a href="portfolio/dryMedia/index.html"><img src="graphics/dry_media.jpg" alt="Dry Media"></a>
-                <div class="title">Digital Media</div>
+            <div class="service">
+                <h2>Digital Publishing</h2>
+                <a href="graphics/yosemite.pdf" target="_blank"><img src="graphics/digPub.jpg" alt="Rowan College Brochure"></a>
+                <p1>Experience with electronic publishing such as info graphics through typography.</p1>
             </div>
-            <div class="column">
-                <a href="portfolio/photography/index.html"><img src="graphics/photography.jpg" alt="Photography"></a>
-                <div class="title">Digital Media</div>
+            <div class="service">
+                <h2>Graphics</h2>
+                <a href="" target="_blank"><img src="graphics/digital_media.svg" alt="Digital Media"></a>
+                <p1>Experience in vector based art.</p1>
+            </div>
+            <div class="buttonWrap">
+                <a href="portfolio/portfolio.html">
+                    <div class="button">
+                        <h>View Portfolio</h>
+                    </div>
+                </a>
             </div>
         </div>
-    </main>
+        <div class="section_3">
+            <h1>Resume</h1>
+            <a href="resume/resume.html">
+                <img src="graphics/resumeHint.jpg" alt="Resume Hint">
+            </a>
+            <div class="buttonWrap">
+                <a href="resume/resume.html">
+                    <div class="button">
+                        <h>View Resume</h>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <h1>Hunter H Design</h1>
+                <p1>Reach out so we can work together to drive more customers to your products and services!</p1>
+                <div class="buttonWrap">
+                    <a href="contact/contact.html">
+                        <div class="button">
+                            <h>Get in Touch</h>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body></html>
