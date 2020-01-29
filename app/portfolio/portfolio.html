@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <title>Portfolio - Hunter H Design</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <link rel="icon" href="/graphics/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/javascript.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/porfolio.css">
+    <script src="../js/javascript.js"></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <img src="/graphics/logo.png" alt="Logo">
+        <a href="../index.html">
+            <img src="../graphics/logo.png" alt="Logo">
         </a>
-        <h1>
-            Portfolio
-        </h1>
-        <div class="placeHolder"></div>
+        <div class="title">
+            <h1>
+                Portfolio
+            </h1>
+        </div>
         <div class="toggleButton" onclick="toggleSideBar();">
             <span></span>
             <span></span>
@@ -29,27 +31,63 @@
     </header>
     <div id="sideBar" class="sideBar_inactive">
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="/resume/resume.html">Resume</a></li>
-            <li><a href="/contact/contact.html">Contact</a></li>
+            <a href="../index.html">
+                <li>
+                    <img src="../graphics/home.svg" alt="Home Icon">
+                    <h2>Home</h2>
+                </li>
+            </a>
+            <a href="../portfolio/portfolio.html">
+                <li>
+                    <img src="../graphics/portfolio.svg" alt="Portfolio Icon">
+                    <h2>Portfolio</h2>
+                </li>
+            </a>
+            <a href="../resume/resume.html">
+                <li>
+                    <img src="../graphics/resume.svg" alt="Resume Icon">
+                    <h2>Resume</h2>
+                </li>
+            </a>
+            <a href="../contact/contact.html">
+                <li>
+                    <img src="../graphics/contact.svg" alt="Contact Icon">
+                    <h2>Contact</h2>
+                </li>
+            </a>
+            <li id="lastLi">
+                <p1>Hunter H Design</p1>
+            </li>
         </ul>
     </div>
-    <main>
+    <div class="main">
         <div class="spacer"></div>
-        <div class="row">
-            <div class="column">
-                <a href="digMedia/digMedia.html"><img src="/graphics/digital_media.svg" alt="Digital Media"></a>
-                <div class="title">Digital Media</div>
+        <div class="categoryContainer">
+            <div class="category">
+                <a href="http://www.hunterhdesign.com/zodiac" target="_blank"><img src="../graphics/webDesign.jpg" alt="Zodiac Site"></a>
+                <h2>Web Design</h2>
             </div>
-            <div class="column">
-                <a href="dryMedia/dryMedia.html"><img src="/graphics/dry_media.jpg" alt="Dry Media"></a>
-                <div class="title">Digital Media</div>
+            <div class="category">
+                <a href="../graphics/yosemite.pdf" target="_blank"><img src="../graphics/digPub.jpg" alt="Yosemite Flyer"></a>
+                <h2>Digital Publishing</h2>
             </div>
-            <div class="column">
-                <a href="photography/photography.html"><img src="/graphics/photography.jpg" alt="Photography"></a>
-                <div class="title">Digital Media</div>
+            <div class="category">
+                <a href="../portfolio/digMedia/digMedia.html" target="_blank"><img src="../graphics/digital_media.svg" alt="Digital Media"></a>
+                <h2>Graphics</h2>
             </div>
         </div>
-    </main>
+    </div>
+    <footer>
+        <div class="footer">
+            <h1>Hunter H Design</h1>
+            <p1>Reach out so we can work together to drive more customers to your products and services!</p1>
+            <div class="buttonWrap">
+                <a href="../contact/contact.html">
+                    <div class="button">
+                        <h>Get in Touch</h>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body></html>

@@ -1,0 +1,112 @@
+.main {
+    margin: 0 4rem;
+    width: 100%;
+}
+
+/*Section 1 - Topline Graphic*/
+
+.section_1 {
+    margin: 0 -4rem;
+}
+
+.section_1 img {
+    width: 100%;
+}
+
+.section_1 h1 {
+    position: absolute;
+    font-weight: normal;
+    top: 20%;
+    left: 15%;
+    color: white;
+}
+
+.section_1 p1 {
+    margin-bottom: 2rem;
+}
+
+.bioText {
+    height: 4rem;
+    padding: 1rem 0;
+    margin-bottom: 5rem;
+}
+
+/*Section 2 - Services*/
+
+.section_2 {
+
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.service {
+    width: 100%;
+    margin-bottom: 2rem;
+    float: left;
+}
+
+/*
+@media screen and (min-width: 500px) {
+    .service {
+        width: 50%;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .service {
+        width: 33%;
+        padding: 0 1rem;
+    }
+}
+*/
+
+.section_2 h1 {
+    float: none;
+    margin-bottom: 3rem;
+}
+
+.service h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section_2 p1 {
+    margin-bottom: 2rem;
+}
+
+.service img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.buttonWrap {
+    widows: 100%;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+/*Section 3 - Resume*/
+
+.section_3 {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.section_3 h1 {
+    margin-bottom: 2rem;
+}
+
+.section_3 p1 {
+    margin-bottom: 2rem;
+}
+
+.section_3 img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.section_3 .button {
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+}
