@@ -8,7 +8,7 @@ img {
 
 #intro {
     position: absolute;
-    top: 15%;
+    top: 30rem;
     color: white;
     width: auto;
     height: 6rem;
@@ -17,30 +17,41 @@ img {
 }
 
 #intro h1 {
-    margin: auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     margin: 0 1.5rem 0 3rem;
 }
 
+.resume {
+    text-align: center;
+}
+.resume h1 {
+    text-align: left;
+}
+
+.resume img {
+    width: 75%;
+}
+
 .service {
     width: 100%;
-    float: left;
 }
 
-/*
-@media only screen and (min-width: 500px) {
-    .service {
-        width: 50%;
-        padding: 0 1rem;
+@media only screen and (min-width: 550px) {
+    html {
+        font-size: 75%;
     }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 850px) {
     .service {
         width: 33%;
+        float: left;
         padding: 0 1rem;
     }
+
+    html {
+        font-size: 50%;
+    }
 }
-*/
