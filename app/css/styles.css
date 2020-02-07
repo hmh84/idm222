@@ -26,22 +26,6 @@ html {
     --primary-accent: var(--acc-col);
 }
 
-.main {
-    padding: 0 4rem;
-}
-
-.main h,
-.main h1,
-.main h2,
-.main h3,
-.main p,
-.main p1,
-.buttonWrap,
-.button,
-img {
-    margin: 2rem 0;
-}
-
 h1 {
     font-size: 3.5rem;
     font-weight: bold;
@@ -50,7 +34,6 @@ h1 {
 h2 {
     font-size: 3rem;
     font-weight: 600;
-    text-align: center;
 }
 
 p1 {
@@ -67,6 +50,11 @@ header {
     color: white;
 }
 
+header a {
+    height: 100%;
+    float: left;
+}
+
 header img {
     width: 7rem;
     margin: 1.5rem;
@@ -76,7 +64,9 @@ header img {
     position: absolute;
     top: .6rem;
     width: 100%;
+    margin: auto;
     text-align: center;
+    height: 100%;
 }
 
 .title h1 {
@@ -115,8 +105,7 @@ header img {
 }
 
 #sideBar ul,
-#sideBar li,
-#lastLi {
+#sideBar li {
     width: 100%;
 }
 
@@ -124,21 +113,18 @@ header img {
     margin-top: 4rem;
 }
 
+#sideBar li:hover {
+    background-color: #ededed;
+}
+
 #sideBar li {
     margin-bottom: 4rem;
     height: 10rem;
 }
 
-#sideBar li:hover {
-    background-color: #ededed;
-}
-
-#activeLi {
-    color: var(--primary-accent);
-}
-
 #lastLi {
     position: absolute;
+    width: 100%;
     bottom: 4rem;
     height: 2rem;
     margin: auto;
@@ -180,25 +166,34 @@ header img {
     top: 2.6rem;
 }
 
-/*Content Buttons*/
-
-.buttonWrap {
-    text-align: center;
-}
-
 .button {
     display: inline-block;
+    margin: auto;
     padding: 1.8rem 2.6rem;
+    width: auto;
+    height: auto;
     background-color: var(--primary-accent);
     color: white;
     border-radius: 1rem;
     text-align: center;
-    font-size: 3.2rem;
+}
+
+.button h {
+    position: relative;
+    font-size: 3.5rem;
 }
 
 /*Footer*/
 
-footer {
+footer h1 {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
     padding: 1rem 4rem;
     background-color: var(--primary-accent);
     color: white;
@@ -206,4 +201,6 @@ footer {
 
 footer .button {
     border: .3rem solid white;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
