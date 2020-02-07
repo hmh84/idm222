@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 100%;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-family: sans-serif;
 }
 
 *,
@@ -24,10 +24,6 @@ html {
 
     --primary-black: var(--tra-blk);
     --primary-accent: var(--acc-col);
-
-    --header-height: 10rem;
-
-    --hdr-hgt: var(--header-height)
 }
 
 .main {
@@ -65,25 +61,15 @@ p1 {
 header {
     position: fixed;
     z-index: 10;
-    height: var(--header-height);
+    height: 10rem;
     background-color: var(--primary-black);
     width: 100%;
     color: white;
 }
 
 header img {
-    margin: 0;
-    padding: 1.5rem;
-    width: 10rem;
-}
-
-header a {
-    z-index: 15;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    margin: 1.5rem;
 }
 
 .title {
@@ -99,12 +85,12 @@ header a {
 
 .spacer {
     width: 100%;
-    height: var(--header-height);
+    height: 10rem;
 }
 
 /*Side Bar*/
 
-#nav {
+#sideBar {
     position: fixed;
     z-index: 5;
     width: 40rem;
@@ -123,32 +109,31 @@ header a {
     right: 0;
 }
 
-#nav a {
+#sideBar a {
     text-decoration: none;
     color: black;
 }
 
-#nav ul,
-#nav li,
+#sideBar ul,
+#sideBar li,
 #lastLi {
     width: 100%;
 }
 
-#nav ul {
+#sideBar ul {
     margin-top: 4rem;
 }
 
-#nav li {
+#sideBar li {
     margin-bottom: 4rem;
     height: 10rem;
 }
 
-#nav li:hover {
+#sideBar li:hover {
     background-color: #ededed;
 }
 
-#activeLi,
-#nav a:hover {
+#activeLi {
     color: var(--primary-accent);
 }
 
@@ -161,7 +146,7 @@ header a {
     color: #828282;
 }
 
-#nav img {
+#sideBar img {
     float: left;
     margin: 0 3.5rem 0 5.5rem;
     width: 6rem;
@@ -170,7 +155,7 @@ header a {
     transform: translateY(-50%);
 }
 
-#nav h2 {
+#sideBar h2 {
     position: relative;
     float: left;
     font-size: 4rem;
@@ -199,9 +184,6 @@ header a {
 
 .buttonWrap {
     text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .button {
