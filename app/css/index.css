@@ -7,28 +7,18 @@
 
 .section_1 {
     margin: 0 -4rem;
-<<<<<<< HEAD
 }
 
 .section_1 img {
     width: 100%;
 }
 
-=======
-}
-
-.section_1 img {
-    width: 100%;
-}
-
->>>>>>> parent of f42bf9e... Aesthetics & Restructure :art: :wrench:
 .section_1 h1 {
     position: absolute;
     font-weight: normal;
     top: 20%;
     left: 15%;
     color: white;
-<<<<<<< HEAD
 }
 
 .section_1 p1 {
@@ -51,34 +41,13 @@
 
 <<<<<<< HEAD .resume {
     text-align: center;
-=======
->>>>>>> parent of f42bf9e... Aesthetics & Restructure :art: :wrench:
 }
 .resume h1 {
     text-align: left;
 }
 
-<<<<<<< HEAD
 .resume img {
     width: 75%;
-=======
-.section_1 p1 {
-    margin-bottom: 2rem;
-}
-
-.bioText {
-    height: 4rem;
-    padding: 1rem 0;
-    margin-bottom: 5rem;
-}
-
-/*Section 2 - Services*/
-
-.section_2 {
-
-    width: 100%;
-    margin-bottom: 3rem;
->>>>>>> parent of f42bf9e... Aesthetics & Restructure :art: :wrench:
 }
 
 .service {
