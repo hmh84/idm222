@@ -1,7 +1,48 @@
-.category img {
+img {
     width: 100%;
 }
 
-.category h2 {
+.service h2 {
     text-align: center;
 }
+
+.service {
+    width: 100%;
+}
+
+/*Media Queries*/
+
+/*
+@media only screen and (min-width: 400px) {
+    .service {
+        width: 50%;
+        float: left;
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .service {
+        width: 50%;
+        float: left;
+        padding: 0 3rem;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    #digMedImg {
+        padding: 0;
+    }
+
+
+    .services {
+        margin-top: 12%;
+    }
+
+
+    main {
+        padding: 0;
+    }
+}*/

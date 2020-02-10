@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/contact.css">
-    <script src="../js/javascript.js"></script>
 </head>
 
 <body>
@@ -23,18 +22,18 @@
                 Contact
             </h1>
         </div>
-        <div class="toggleButton" onclick="toggleSideBar();">
+        <div id="toggleButton" onclick="toggleSideBar();">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </header>
-    <div id="sideBar" class="sideBar_inactive">
+    <div class="nav">
         <ul>
             <a href="../index.html">
                 <li>
-                    <img src="../graphics/home.svg" alt="Home Icon">
-                    <h2>Home</h2>
+                    <img class="home" src="../graphics/home.svg" alt="Home Icon">
+                    <h2 class="home">Home</h2>
                 </li>
             </a>
             <a href="../portfolio/portfolio.html">
@@ -59,22 +58,28 @@
                 <p1>Hunter H Design</p1>
             </li>
         </ul>
+        <script src="../js/javascript.js"></script>
     </div>
     <div class="main">
         <div class="spacer"></div>
+        <h1>Get in Touch!</h1>
+        <div class="contact_form">
+            <form target="_blank" action="https://formspree.io/xzbzoord" method="POST">
+                <input type="text" name="Name" placeholder="Full Name" required input maxlength="30">
+                <input type="email" name="Email" placeholder="Email" required input maxlength="30">
+                <input type="text" name="Subject" placeholder="Subject" required input maxlength="30">
+                <textarea type="text" name="Message" placeholder="Message" required input maxlength="500"></textarea>
+                <div class="buttonWrap">
+                    <input type="submit" value="SEND MESSAGE">
+                </div>
+            </form>
+        </div>
+        <div class="buttonWrap">
+            <a href="https://www.linkedin.com/in/hunter-hampton" target="_blank"><img src="../graphics/linkedin.svg" alt="LinkedIn Icon"></a>
+        </div>
     </div>
     <footer>
-        <div class="footer">
-            <h1>Hunter H Design</h1>
-            <p1>Reach out so we can work together to drive more customers to your products and services!</p1>
-            <div class="buttonWrap">
-                <a href="../contact/contact.html">
-                    <div class="button">
-                        <h>Get in Touch</h>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <p1>Hunter H Design 2020</p1>
     </footer>
 </body>
 

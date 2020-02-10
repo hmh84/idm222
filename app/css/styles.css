@@ -26,8 +26,10 @@ html {
     --primary-accent: var(--acc-col);
 
     --header-height: 10rem;
+    --hdr-hgt: var(--header-height);
 
-    --hdr-hgt: var(--header-height)
+    --secondary-black: #505050;
+    --acc-col2: var(--secondary-black);
 }
 
 .main {
@@ -104,7 +106,19 @@ header a {
 
 /*Side Bar*/
 
-#nav {
+.nav {
+    position: fixed;
+    z-index: 5;
+    width: 40rem;
+    height: 100%;
+    background-color: white;
+    color: black;
+    transition: all 225ms linear;
+    margin-top: 10rem;
+    right: -40rem;
+}
+
+.navActive {
     position: fixed;
     z-index: 5;
     width: 40rem;
@@ -113,42 +127,35 @@ header a {
     color: black;
     transition: all 250ms linear;
     margin-top: 10rem;
-}
-
-.sideBar_inactive {
-    right: -40rem;
-}
-
-.sideBar_active {
     right: 0;
 }
 
-#nav a {
+.nav a {
     text-decoration: none;
     color: black;
 }
 
-#nav ul,
-#nav li,
+.nav ul,
+.nav li,
 #lastLi {
     width: 100%;
 }
 
-#nav ul {
+.nav ul {
     margin-top: 4rem;
 }
 
-#nav li {
+.nav li {
     margin-bottom: 4rem;
     height: 10rem;
 }
 
-#nav li:hover {
+.nav li:hover {
     background-color: #ededed;
 }
 
 #activeLi,
-#nav a:hover {
+.nav a:hover {
     color: var(--primary-accent);
 }
 
@@ -161,7 +168,7 @@ header a {
     color: #828282;
 }
 
-#nav img {
+.nav img {
     float: left;
     margin: 0 3.5rem 0 5.5rem;
     width: 6rem;
@@ -170,7 +177,7 @@ header a {
     transform: translateY(-50%);
 }
 
-#nav h2 {
+.nav h2 {
     position: relative;
     float: left;
     font-size: 4rem;
@@ -180,7 +187,7 @@ header a {
     transform: translateY(-50%);
 }
 
-.toggleButton span {
+#toggleButton span {
     display: block;
     width: 5rem;
     height: .4rem;
@@ -188,11 +195,15 @@ header a {
     margin: 1rem 0;
 }
 
-.toggleButton {
+#toggleButton {
     position: absolute;
     z-index: 15;
     right: 3rem;
     top: 2.6rem;
+}
+
+#toggleButton:hover {
+    cursor: pointer;
 }
 
 /*Content Buttons*/
@@ -211,7 +222,7 @@ header a {
     color: white;
     border-radius: 1rem;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 /*Footer*/
@@ -225,3 +236,39 @@ footer {
 footer .button {
     border: .3rem solid white;
 }
+
+/*Media Queries*/
+
+/*
+@media only screen and (min-width: 550px) {
+    html {
+        font-size: 60%;
+    }
+
+
+    header {
+        height: %;
+    }
+
+    needs to reference internals .main {
+        padding: 0 15rem;
+    }
+
+    .main h,
+    .main h1,
+    .main h2,
+    .main h3,
+    .main p,
+    .main p1,
+    .buttonWrap,
+    .button,
+    img {
+        margin: 3rem 0;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    html {
+        font-size: 50%;
+    }
+}*/

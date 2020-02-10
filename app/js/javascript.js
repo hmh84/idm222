@@ -1,4 +1,6 @@
-function toggleSideBar() {
-    var element = document.getElementById("nav");
-    element.classList.toggle("sideBar_active");
+document.querySelector('#toggleButton').addEventListener('click', toggleNav);
+
+function toggleNav() {
+    var element = document.querySelector(".nav");
+    element.classList.toggle("navActive");
 }

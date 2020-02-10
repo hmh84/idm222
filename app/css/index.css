@@ -26,6 +26,7 @@ img {
 .resume {
     text-align: center;
 }
+
 .resume h1 {
     text-align: left;
 }
@@ -36,22 +37,29 @@ img {
 
 .service {
     width: 100%;
+    padding: 0px;
 }
 
-@media only screen and (min-width: 550px) {
-    html {
-        font-size: 75%;
-    }
+#digMedImg {
+    padding: 5rem;
 }
 
+/*Media Queries*/
+
+/*
 @media only screen and (min-width: 850px) {
     .service {
         width: 33%;
         float: left;
-        padding: 0 1rem;
+        padding: 0 3rem;
     }
 
     html {
         font-size: 50%;
     }
+
+    #digMedImg {
+        padding: 0;
+    }
 }
+*/

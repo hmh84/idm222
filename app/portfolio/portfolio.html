@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/porfolio.css">
-    <script src="../js/javascript.js"></script>
 </head>
 
 <body>
@@ -23,18 +22,18 @@
                 Portfolio
             </h1>
         </div>
-        <div class="toggleButton" onclick="toggleSideBar();">
+        <div id="toggleButton">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </header>
-    <div id="sideBar" class="sideBar_inactive">
+    <div class="nav">
         <ul>
             <a href="../index.html">
                 <li>
-                    <img src="../graphics/home.svg" alt="Home Icon">
-                    <h2>Home</h2>
+                    <img class="home" src="../graphics/home.svg" alt="Home Icon">
+                    <h2 class="home">Home</h2>
                 </li>
             </a>
             <a href="../portfolio/portfolio.html">
@@ -59,39 +58,40 @@
                 <p1>Hunter H Design</p1>
             </li>
         </ul>
+        <script src="../js/javascript.js"></script>
     </div>
     <div class="main">
         <div class="spacer"></div>
-        <div class="categoryContainer">
-            <div class="category">
+        <div class="services">
+            <div class="service">
                 <a href="http://www.hunterhdesign.com/zodiac" target="_blank"><img src="../graphics/webDesign.jpg" alt="Zodiac Site"></a>
                 <h2>Web Design</h2>
             </div>
-            <div class="category">
+            <div class="service">
                 <a href="../graphics/yosemite.pdf" target="_blank"><img src="../graphics/digPub.jpg" alt="Yosemite Flyer"></a>
                 <h2>Digital Publishing</h2>
             </div>
-            <div class="category">
+            <div class="service">
                 <a href="../portfolio/digMedia/digMedia.html" target="_blank"><img src="../graphics/digital_media.svg" alt="Digital Media"></a>
                 <h2>Graphics</h2>
             </div>
-            <div class="category">
-                <a href="../portfolio/dryMedia/dryMedia.html" target="_blank"><img src="../graphics/dry_media.jpg" alt="Digital Media"></a>
+            <div class="service">
+                <a href="../portfolio/dryMedia/dryMedia.html" target="_blank"><img src="../graphics/dry_media.jpg" alt="Digital Media" id="fix"></a>
                 <h2>Dry Media</h2>
             </div>
         </div>
     </div>
+    <!--
     <footer>
         <h1>Hunter H Design</h1>
         <p1>Reach out so we can work together to drive more customers to your products and services!</p1>
         <div class="buttonWrap">
-            <a href="contact/contact.html">
+            <a href="../contact/contact.html">
                 <div class="button">
                     <h>Get in Touch</h>
                 </div>
             </a>
         </div>
     </footer>
-</body>
-
-</html>
+-->
+</body></html>
