@@ -32,6 +32,13 @@ html {
     --acc-col2: var(--secondary-black);
 }
 
+body {
+    background-position: center;
+    background-size: auto, cover;
+    text-align: center;
+    background-image: url("/graphics/pattern.png");
+}
+
 .main {
     padding: 0 4rem;
 }
@@ -60,8 +67,8 @@ h2 {
 }
 
 p1 {
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 2.2rem;
+    font-weight: 500;
 }
 
 header {
@@ -106,7 +113,8 @@ header a {
 
 /*Side Bar*/
 
-.nav {
+.nav,
+.navActive {
     position: fixed;
     z-index: 5;
     width: 40rem;
@@ -115,19 +123,27 @@ header a {
     color: black;
     transition: all 225ms linear;
     margin-top: 10rem;
+}
+
+.nav {
     right: -40rem;
 }
 
 .navActive {
-    position: fixed;
-    z-index: 5;
-    width: 40rem;
-    height: 100%;
-    background-color: white;
-    color: black;
-    transition: all 250ms linear;
-    margin-top: 10rem;
     right: 0;
+}
+
+.navBack {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navBckRndActive {
+    display: contents;
 }
 
 .nav a {
@@ -161,7 +177,7 @@ header a {
 
 #lastLi {
     position: absolute;
-    bottom: 4rem;
+    bottom: 15%;
     height: 2rem;
     margin: auto;
     text-align: center;

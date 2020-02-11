@@ -27,10 +27,6 @@ img {
     text-align: center;
 }
 
-.resume h1 {
-    text-align: left;
-}
-
 .resume img {
     width: 75%;
 }
@@ -45,7 +41,6 @@ img {
 }
 
 /*Media Queries*/
-
 /*
 @media only screen and (min-width: 850px) {
     .service {

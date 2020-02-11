@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/porfolio.css">
-    <script src="../../js/javascript.js"></script>
 </head>
 
 <body>
@@ -23,13 +22,13 @@
                 Dry Media
             </h1>
         </div>
-        <div class="toggleButton" onclick="toggleSideBar();">
+        <div id="toggleButton" onclick="toggleSideBar();">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </header>
-    <div id="nav" class="sideBar_inactive">
+    <div class="nav">
         <ul>
             <a href="../../index.html">
                 <li>
@@ -39,8 +38,8 @@
             </a>
             <a href="../../portfolio/portfolio.html">
                 <li>
-                    <img src="../../graphics/portfolio.svg" alt="Portfolio Icon">
-                    <h2>Portfolio</h2>
+                    <img src="../../graphics/portfolioActive.svg" alt="Portfolio Icon">
+                    <h2 id="activeLi">Portfolio</h2>
                 </li>
             </a>
             <a href="../../resume/resume.html">
@@ -51,18 +50,19 @@
             </a>
             <a href="../../contact/contact.html">
                 <li>
-                    <img src="../../graphics/contactActive.svg" alt="Contact Icon">
-                    <h2 id="activeLi">Contact</h2>
+                    <img src="../../graphics/contact.svg" alt="Contact Icon">
+                    <h2>Contact</h2>
                 </li>
             </a>
             <li id="lastLi">
                 <p1>Hunter H Design</p1>
             </li>
         </ul>
+        <div class="navBack" hidden="true"></div>
+        <script src="../../js/javascript.js"></script>
     </div>
     <div class="main">
         <div class="spacer"></div>
-
     </div>
     <footer>
         <div class="footer">
