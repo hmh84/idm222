@@ -48,7 +48,6 @@ body {
 .main h2,
 .main h3,
 .main p,
-.main p1,
 .buttonWrap,
 .button,
 img {
@@ -66,7 +65,7 @@ h2 {
     text-align: center;
 }
 
-p1 {
+p {
     font-size: 2.2rem;
     font-weight: 500;
 }
@@ -111,18 +110,18 @@ header a {
     height: var(--header-height);
 }
 
-/*Side Bar*/
+/* Nav */
 
 .nav,
 .navActive {
     position: fixed;
     z-index: 5;
     width: 40rem;
-    height: 100%;
+    height: 100vh;
     background-color: white;
     color: black;
     transition: all 225ms linear;
-    margin-top: 10rem;
+    margin-top: var(--header-height);
 }
 
 .nav {
@@ -140,10 +139,6 @@ header a {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-.navBckRndActive {
-    display: contents;
 }
 
 .nav a {
@@ -164,15 +159,6 @@ header a {
 .nav li {
     margin-bottom: 4rem;
     height: 10rem;
-}
-
-.nav li:hover {
-    background-color: #ededed;
-}
-
-#activeLi,
-.nav a:hover {
-    color: var(--primary-accent);
 }
 
 #lastLi {
@@ -218,10 +204,6 @@ header a {
     top: 2.6rem;
 }
 
-#toggleButton:hover {
-    cursor: pointer;
-}
-
 /*Content Buttons*/
 
 .buttonWrap {
@@ -236,6 +218,7 @@ header a {
     padding: 1.8rem 2.6rem;
     background-color: var(--primary-accent);
     color: white;
+    border: .3rem solid var(--primary-accent);
     border-radius: 1rem;
     text-align: center;
     font-size: 2rem;
@@ -251,19 +234,64 @@ footer {
 
 footer .button {
     border: .3rem solid white;
+    margin: 1rem 0;
+}
+
+/* Hover States */
+
+.button,
+header img,
+.nav li,
+#activeLi,
+.nav a {
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+.nav li:hover {
+    background-color: #ededed;
+}
+
+#activeLi {
+    color: var(--primary-accent);
+}
+
+#toggleButton:hover {
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--primary-accent);
+    border: .3rem solid var(--primary-accent);
+}
+
+footer .button:hover {
+    border: .3rem solid white;
+    margin: 1rem 0;
 }
 
 /*Media Queries*/
 
-/*
-@media only screen and (min-width: 550px) {
-    html {
-        font-size: 60%;
+@media (min-width: 400px) {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+        grid-column-gap: 5rem;
+        justify-items: center;
     }
 
+    .main {
+        max-width: 1200px;
+        margin: auto;
+    }
 
-    header {
-        height: %;
+    html {
+        font-size: 60%;
     }
 
     needs to reference internals .main {
@@ -275,16 +303,64 @@ footer .button {
     .main h2,
     .main h3,
     .main p,
-    .main p1,
     .buttonWrap,
     .button,
     img {
         margin: 3rem 0;
     }
+
 }
 
-@media only screen and (min-width: 850px) {
-    html {
-        font-size: 50%;
+@media (min-width: 768px) {
+
+    #toggleButton,
+    #lastLi {
+        display: none;
     }
-}*/
+
+    .spacer {
+        height: calc(var(--header-height)*1.75)
+    }
+
+    .nav {
+        right: 0;
+        width: 100vw;
+        height: calc(var(--header-height)*.75);
+        background-color: rgba(255, 255, 255, .5);
+
+    }
+
+    .nav ul {
+        margin: 0;
+    }
+
+    .nav li {
+        width: 25%;
+        height: calc(var(--header-height)*.75);
+        margin: 0;
+        float: left;
+    }
+
+    .nav li:hover {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .nav img {
+        float: left;
+        margin: 0;
+        width: 4.5rem;
+        height: 100%;
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        transform: translateX(50%);
+    }
+
+    .nav h2 {
+        float: left;
+        position: relative;
+        font-size: 3rem;
+        width: 75%;
+    }
+
+}

@@ -2,13 +2,15 @@ img {
     width: 100%;
 }
 
-.topLine img {
+#topLine img {
     margin: 0 0 2rem;
+    max-height: 75vh;
+    object-fit: cover;
 }
 
 #intro {
     position: absolute;
-    top: 30rem;
+    top: calc(50vh*.85);
     color: white;
     width: auto;
     height: 6rem;
@@ -28,12 +30,26 @@ img {
 }
 
 .resume img {
-    width: 75%;
+    width: 100%;
+    margin-bottom: 0;
 }
 
 .service {
     width: 100%;
-    padding: 0px;
+    padding: 2rem2.5rem;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    border-radius: 1rem;
+}
+
+.service p1 {
+    margin-bottom: 5rem;
+}
+
+.service:hover {
+    background-color: white;
+    /*    transform: scale(1.025);*/
+    box-shadow: 5px 10px #ccc;
 }
 
 #digMedImg {
@@ -41,20 +57,3 @@ img {
 }
 
 /*Media Queries*/
-/*
-@media only screen and (min-width: 850px) {
-    .service {
-        width: 33%;
-        float: left;
-        padding: 0 3rem;
-    }
-
-    html {
-        font-size: 50%;
-    }
-
-    #digMedImg {
-        padding: 0;
-    }
-}
-*/
