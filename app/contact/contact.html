@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../graphics/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -17,7 +18,7 @@
         <a href="../index.html">
             <img src="../graphics/logo.png" alt="Logo">
         </a>
-        <div class="title">
+        <div id="title">
             <h1>
                 Contact
             </h1>
@@ -28,41 +29,39 @@
             <span></span>
         </div>
     </header>
-    <div class="nav">
+    <div id="navBack" hidden></div>
+    <nav>
         <ul>
             <a href="../index.html">
                 <li>
                     <img class="home" src="../graphics/home.svg" alt="Home Icon">
-                    <h2 class="home">Home</h2>
+                    <h1 class="home">Home</h1>
                 </li>
             </a>
             <a href="../portfolio/portfolio.html">
                 <li>
                     <img src="../graphics/portfolio.svg" alt="Portfolio Icon">
-                    <h2>Portfolio</h2>
+                    <h1>Portfolio</h1>
                 </li>
             </a>
             <a href="../resume/resume.html">
                 <li>
                     <img src="../graphics/resume.svg" alt="Resume Icon">
-                    <h2>Resume</h2>
+                    <h1>Resume</h1>
                 </li>
             </a>
-            <a href="../contact/contact.html">
+            <a href="#top">
                 <li>
                     <img src="../graphics/contactActive.svg" alt="Contact Icon">
-                    <h2 id="activeLi">Contact</h2>
+                    <h1 id="activeLi">Contact</h1>
                 </li>
             </a>
-            <li id="lastLi">
-                <p1>Hunter H Design</p1>
-            </li>
+            <p>Hunter H Design</p>
         </ul>
-        <div class="navBack" hidden="true"></div>
         <script src="../js/javascript.js"></script>
-    </div>
-    <div class="main">
-        <div class="spacer"></div>
+    </nav>
+    <main>
+        <div id="spacer"></div>
         <h1>Get in Touch!</h1>
         <div class="contact_form">
             <form target="_blank" action="https://formspree.io/xzbzoord" method="POST">
@@ -78,10 +77,8 @@
         <div class="buttonWrap">
             <a href="https://www.linkedin.com/in/hunter-hampton" target="_blank"><img src="../graphics/linkedin.svg" alt="LinkedIn Icon"></a>
         </div>
-    </div>
+    </main>
     <footer>
-        <p1>Hunter H Design 2020</p1>
+        <p>Hunter H Design 2020</p>
     </footer>
-</body>
-
-</html>
+</body></html>

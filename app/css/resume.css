@@ -1,0 +1,29 @@
+main h1,
+h2,
+p1,
+p {
+    text-align: left;
+}
+
+main {
+    padding-bottom: .5rem;
+}
+
+main h1 {
+    color: var(--primary-accent);
+    border-bottom: .2rem solid;
+    margin: 1rem 0;
+}
+
+p2 {
+    float: right;
+}
+
+p {
+    list-style-type: circle;
+}
+
+.divider {
+    width: 100%;
+    height: 1rem;
+}

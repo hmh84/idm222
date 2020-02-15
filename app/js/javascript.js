@@ -1,15 +1,13 @@
-document.querySelector('#toggleButton').addEventListener('click', toggleNav);
+const toggleButton = document.querySelector('#toggleButton');
+const nav = document.querySelector('nav');
+const navBckRnd = document.querySelector('#navBack');
 
-function toggleNav() {
-    var element = document.querySelector('.nav');
-    element.classList.toggle('navActive');
-    document.querySelector('.navBack').removeAttribute('hidden');
-}
+toggleButton.addEventListener('click', () => {
+    nav.setAttribute('id', 'navActive');
+    navBckRnd.hidden = false;
+})
 
-document.querySelector('.navBack').addEventListener('click', navBackHidden);
-
-function navBackHidden() {
-    toggleNav();
-    document.querySelector('.navBack').hidden = true;
-
-}
+navBckRnd.addEventListener('click', () => {
+    nav.removeAttribute('id');
+    navBckRnd.hidden = true;
+});

@@ -2,27 +2,27 @@ img {
     width: 100%;
 }
 
-#topLine img {
-    margin: 0 0 2rem;
-    max-height: 75vh;
+#hero img {
+    margin: 0 0 1rem;
+    max-height: 70vh;
     object-fit: cover;
 }
 
-#intro {
+#heroBanner {
     position: absolute;
-    top: calc(50vh*.85);
+    top: calc(30vh*.85);
     color: white;
     width: auto;
-    height: 6rem;
+    height: 2.5rem;
     background: var(--primary-accent);
     text-align: center;
 }
 
-#intro h1 {
+#heroBanner h1 {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0 1.5rem 0 3rem;
+    margin: 0 1rem;
 }
 
 .resume {
@@ -31,29 +31,14 @@ img {
 
 .resume img {
     width: 100%;
+    max-width: 768px;
     margin-bottom: 0;
-}
-
-.service {
-    width: 100%;
-    padding: 2rem2.5rem;
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    border-radius: 1rem;
-}
-
-.service p1 {
-    margin-bottom: 5rem;
 }
 
 .service:hover {
     background-color: white;
     /*    transform: scale(1.025);*/
     box-shadow: 5px 10px #ccc;
-}
-
-#digMedImg {
-    padding: 5rem;
 }
 
 /*Media Queries*/
