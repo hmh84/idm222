@@ -7,52 +7,19 @@ footer {
 }
 
 main {
-    padding: 2rem 2rem
+    padding: 2rem 2rem;
 }
 
 /*Form & Inputs*/
 
 input {
     width: 100%;
-    padding: ;
     height: 2rem;
     float: left;
     font-size: 1rem;
     border-bottom: .1rem solid var(--secondary-black);
     margin: 1.5rem 0;
     padding-bottom: 1rem;
-}
-
-.buttonWrap input {
-    background-color: var(--primary-accent);
-    width: 50%;
-    color: white;
-    border: none;
-    padding: .5rem 1.5rem;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.buttonWrap img {
-    height: 4rem;
-    text-align: center;
-}
-
-form .submit {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--primary-accent);
-    color: white;
-    border: .1rem solid var(--primary-accent);
-    border-radius: .5rem;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.buttonWrap input:hover {
-    background-color: var(--secondary-black);
-    cursor: pointer;
 }
 
 textarea {
@@ -63,4 +30,35 @@ textarea {
     width: 100%;
     font-size: 1rem;
     border-bottom: .1rem solid var(--secondary-black);
+}
+
+.submit {
+    width: fit-content;
+    height: 3rem;
+    padding: .25rem 2rem;
+}
+
+.buttonWrap img {
+    height: 4rem;
+    text-align: center;
+}
+
+/* Hover States */
+
+.buttonWrap input:hover, .buttonWrap img:hover {
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+}
+
+.buttonWrap input:hover {
+    background-color: white;
+    color: var(--primary-accent);
+}
+
+.buttonWrap img:hover {
+    transform: scale(1.1);
+}
+
+form .submit:hover {
+    cursor: pointer;
 }

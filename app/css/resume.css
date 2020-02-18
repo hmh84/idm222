@@ -27,3 +27,18 @@ p {
     width: 100%;
     height: 1rem;
 }
+
+/* Footer text align center for resume.html
+Necessary because resume.css applies {text-align: left;} to h1 & p elements
+Resume.css takes priority over styles.css */
+
+footer h1, footer p {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    footer h1,
+    footer p {
+        text-align: left;
+    }
+}
