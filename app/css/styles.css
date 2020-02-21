@@ -233,8 +233,6 @@ main {
 .service {
     width: 100%;
     padding: 1rem 1rem;
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
     border-radius: 1rem;
     margin-bottom: .5rem;
 }
@@ -282,7 +280,8 @@ footer .button {
 header img,
 nav li,
 .activeLi,
-nav a {
+nav a, 
+.service {
     transition: all .1s ease-in-out;
     -webkit-transition: all .1s ease-in-out;
 }
@@ -303,6 +302,12 @@ nav li:hover {
 
 #toggleButton:hover {
     cursor: pointer;
+}
+
+.service:hover {
+    background-color: white;
+    /*    transform: scale(1.025);*/
+    box-shadow: 5px 10px #ccc;
 }
 
 .button:hover {

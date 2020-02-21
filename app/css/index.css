@@ -38,11 +38,3 @@ p:first-child {
     max-width: 768px;
     margin-bottom: 0;
 }
-
-.service:hover {
-    background-color: white;
-    /*    transform: scale(1.025);*/
-    box-shadow: 5px 10px #ccc;
-}
-
-/*Media Queries*/
