@@ -6,6 +6,10 @@ img {
     text-align: center;
 }
 
+.services {
+    padding-top: var(--header-height);
+}
+
 .service {
     width: 100%;
 }

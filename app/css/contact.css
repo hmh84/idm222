@@ -8,6 +8,7 @@ footer {
 
 main {
     padding: 2rem 2rem;
+    padding-top: calc(var(--header-height)*1.5);
 }
 
 /*Form & Inputs*/
@@ -15,37 +16,45 @@ main {
 input {
     width: 100%;
     height: 2rem;
+    padding: 1rem .5rem;
     float: left;
     font-size: 1rem;
     border-bottom: .1rem solid var(--secondary-black);
     margin: 1.5rem 0;
     padding-bottom: 1rem;
+    background-color: rgba(255, 255, 255, .75);
+    box-shadow: 5px 10px #ccc;
 }
 
 textarea {
     min-height: 6rem;
     min-width: 100%;
+    padding: .5rem;
     max-height: 18rem;
     max-width: 100%;
     width: 100%;
     font-size: 1rem;
+    background-color: rgba(255, 255, 255, .75);
     border-bottom: .1rem solid var(--secondary-black);
+    box-shadow: 5px 10px #ccc;
 }
 
 .submit {
     width: fit-content;
     height: 3rem;
     padding: .25rem 2rem;
+    box-shadow: none;
 }
 
-.buttonWrap img {
+.buttonWrap svg {
     height: 4rem;
     text-align: center;
+    fill: #0077b5;
 }
 
 /* Hover States */
 
-.buttonWrap input:hover, .buttonWrap img:hover {
+.buttonWrap svg, .buttonWrap svg {
     transition: all .1s ease-in-out;
     -webkit-transition: all .1s ease-in-out;
 }
@@ -55,8 +64,9 @@ textarea {
     color: var(--primary-accent);
 }
 
-.buttonWrap img:hover {
+.buttonWrap svg:hover {
     transform: scale(1.1);
+    fill: var(--secondary-black);
 }
 
 form .submit:hover {

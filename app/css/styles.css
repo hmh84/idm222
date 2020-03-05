@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     font-size: 100%;
     font-family: "Avenir Next", "Avenir", sans-serif;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -19,17 +20,11 @@ html {
 }
 
 :root {
-    --tra-blk: rgba(0, 0, 0, .85);
-    --acc-col: #c4493f;
-
-    --primary-black: var(--tra-blk);
-    --primary-accent: var(--acc-col);
+    --primary-black: rgba(0, 0, 0, .85);
+    --secondary-black: #353535;
+    --primary-accent: #c4493f;
 
     --header-height: 4rem;
-    --hdr-hgt: var(--header-height);
-
-    --secondary-black: #505050;
-    --acc-col2: var(--secondary-black);
 }
 
 body {
@@ -43,7 +38,6 @@ main {
     padding: 0 1rem;
 }
 
-main h,
 main h1,
 main h2,
 main h3,
@@ -118,10 +112,11 @@ header a {
     font-weight: normal;
 }
 
-#spacer {
+/* #spacer {
     width: 100%;
     height: var(--header-height);
-}
+    display: none;
+} */
 
 #toggleButton span {
     display: block;
@@ -159,7 +154,7 @@ nav {
     background-color: white;
     color: black;
     transition: all 225ms linear;
-    margin-top: var(--header-height);
+    /* margin-top: var(--header-height); */
     right: -15rem;
 }
 
@@ -261,6 +256,12 @@ main {
     font-size: 1rem;
 }
 
+.button h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+}
+
 /*Footer*/
 
 footer {
@@ -276,12 +277,26 @@ footer .button {
 
 /* Hover States */
 
+h,
+h1,
+h2,
+h3,
+p,
+p1 {
+    cursor: default;
+}
+
+nav h1, .services p, .button h1 {
+    cursor: pointer;
+}
+
 .button,
 header img,
 nav li,
 .activeLi,
 nav a, 
-.service {
+.service,
+#toggleButton {
     transition: all .1s ease-in-out;
     -webkit-transition: all .1s ease-in-out;
 }
@@ -302,6 +317,11 @@ nav li:hover {
 
 #toggleButton:hover {
     cursor: pointer;
+    transform: translateX(-.5rem);
+}
+
+#toggleButton:hover span {
+    background-color: #777777;
 }
 
 .service:hover {
@@ -320,63 +340,9 @@ footer .button:hover {
     border: .1rem solid white;
 }
 
-/*Media Queries*/
+/*Media Queries: General*/
 
 @media only screen and (min-width: 768px) {
-
-    header a, header img {
-        display: none;
-    }
-
-    #toggleButton,
-    nav p {
-        display: none;
-    }
-
-    #spacer {
-        height: calc(var(--header-height)*1.75)
-    }
-
-    nav {
-        right: 0;
-        width: 100vw;
-        height: calc(var(--header-height)*.75);
-        background-color: rgba(255, 255, 255, .5);
-
-    }
-
-    nav ul {
-        margin: 0;
-    }
-
-    nav li {
-        width: 25%;
-        height: calc(var(--header-height)*.75);
-        margin: 0;
-        float: left;
-    }
-
-    nav li:hover {
-        background-color: rgba(255, 255, 255, 1);
-        color: var(--primary-accent);
-        fill: var(--primary-accent);
-    }
-
-    nav svg {
-        float: left;
-        margin: 0 0 0 1rem;
-        width: 2rem;
-        height: 100%;
-    }
-
-    nav h1 {
-        float: left;
-        height: fill-available;
-        height: -webkit-fill-available;
-        padding: .75rem 0 0 25%;
-        /* padding-left: 25%; */
-        text-align: center;
-    }
 
     footer h1,
     footer p {
@@ -402,5 +368,78 @@ footer .button:hover {
 
     .service p {
         height: 2.5rem
+    }
+}
+
+/* Media Queries: Header/Nav */
+
+@media only screen and (min-width: 890px) {
+    header {
+        width: 30vw;
+        background: none;
+        z-index: 25;
+    }
+
+    header a, header img {
+        display: none;
+    }
+
+    header h1 {
+        text-align: left;
+        margin: 0 2rem;
+        height: min-content;
+        transform: translateY(50%);
+    }
+
+    #toggleButton,
+    nav p {
+        display: none;
+    }
+
+    nav {
+        left: 0;
+        width: 100vw;
+        height: var(--header-height);
+        background-color: var(--primary-black);
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    nav li {
+        width: fit-content;
+        height: var(--header-height);
+        margin: 0 1rem;
+        float: right;
+        color: white;
+        fill: white;
+    }
+
+    nav li:first-child {
+        margin-left: 0;
+    }
+
+    nav li:hover {
+        background-color: var(--secondary-black);
+        color: white;
+        fill: white;
+    }
+
+    nav svg, nav h1 {
+        margin-right: 1rem;
+    }
+
+    nav svg {
+        width: 1.5rem;
+        float: left;
+    }
+
+    nav h1 {
+        width: min-content;
+        float: left;
+        transform: translateY(-10%);
+        font-weight: normal;
+        font-size: 1.25rem;
     }
 }
