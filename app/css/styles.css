@@ -170,7 +170,7 @@ nav a {
 nav ul,
 nav li,
 nav p {
-    width: 100%;
+    width: 100%;            
 }
 
 nav li {
@@ -342,7 +342,7 @@ footer .button:hover {
 
 /*Media Queries: General*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
 
     footer h1,
     footer p {
@@ -350,7 +350,7 @@ footer .button:hover {
     }
 
     #footerWrap {
-        max-width: 1200px;
+        max-width: 75em;
         padding: 0 1rem;
         margin: auto;
     }
@@ -373,7 +373,7 @@ footer .button:hover {
 
 /* Media Queries: Header/Nav */
 
-@media only screen and (min-width: 890px) {
+@media only screen and (min-width: 55.625em) {
     header {
         width: 30vw;
         background: none;
@@ -392,7 +392,7 @@ footer .button:hover {
     }
 
     #toggleButton,
-    nav p {
+    nav p, #navBack {
         display: none;
     }
 
@@ -414,6 +414,7 @@ footer .button:hover {
         float: right;
         color: white;
         fill: white;
+        padding: 0 1rem;
     }
 
     nav li:first-child {
@@ -427,7 +428,7 @@ footer .button:hover {
     }
 
     nav svg, nav h1 {
-        margin-right: 1rem;
+        margin: 0 .5rem;
     }
 
     nav svg {

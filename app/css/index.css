@@ -4,7 +4,6 @@ img {
 
 #hero img {
     margin: 0 0 1rem;
-    /* max-height: 70vh; */
     object-fit: cover;
 }
 
@@ -36,28 +35,47 @@ p:first-child {
     text-align: center;
 }
 
-#resume img {
+#picture {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255,1255, 255, 1)), url("../graphics/resume.jpg");
+    filter: grayscale(1);
+    background-size: 100% 100%;
+    height: 20rem;
     width: 100%;
-    max-width: 768px;
+    max-width: 48rem;
+    margin: auto;
     margin-bottom: 0;
 }
 
 /* Hover States */
 
-#resume img {
+#picture {
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
 }
 
-#resume img:hover {
+#picture:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255,1255, 255, 0)), url("../graphics/resume.jpg");
     box-shadow: 5px 10px #ccc;
+    filter: none;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 68.75em) {
     #heroBanner {
         top: 40vh;
     }
     #heroBanner h1 {
         font-size: 250%;
+    }
+}
+
+@media only screen and (max-width: 34.375em) {
+    #heroBanner {
+        top: 25vh;
+    }
+    #heroBanner h1 {
+        font-size: 125%;
+    }
+    #hero img {
+        margin-top: var(--header-height);
     }
 }

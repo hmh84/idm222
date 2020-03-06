@@ -22,7 +22,7 @@ input {
     border-bottom: .1rem solid var(--secondary-black);
     margin: 1.5rem 0;
     padding-bottom: 1rem;
-    background-color: rgba(255, 255, 255, .75);
+    background-color: white;
     box-shadow: 5px 10px #ccc;
 }
 
@@ -30,7 +30,7 @@ textarea {
     min-height: 6rem;
     min-width: 100%;
     padding: .5rem;
-    max-height: 18rem;
+    max-height: 15rem;
     max-width: 100%;
     width: 100%;
     font-size: 1rem;
@@ -54,7 +54,7 @@ textarea {
 
 /* Hover States */
 
-.buttonWrap svg, .buttonWrap svg {
+.buttonWrap svg, .buttonWrap svg, .submit, input, textarea {
     transition: all .1s ease-in-out;
     -webkit-transition: all .1s ease-in-out;
 }
@@ -71,4 +71,25 @@ textarea {
 
 form .submit:hover {
     cursor: pointer;
+}
+
+input:hover, textarea:hover {
+    background-color: rgb(201, 201, 201);
+    /* color: white; */
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 48em) {
+    #name, #email {
+        float: left;
+        width: 47.5%;
+    }
+
+    #name {
+        margin-right: 2.5%;
+    }
+    #email {
+        margin-left: 2.5%;
+    }
 }
