@@ -35,7 +35,7 @@ body {
 }
 
 main {
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 main h1,
@@ -75,41 +75,34 @@ a:active {
     color: black;
 }
 
-/* Header */
+/* Nav */
 
-header {
+#header {
     position: fixed;
-    z-index: 10;
-    height: var(--header-height);
-    background-color: var(--primary-black);
-    width: 100%;
-    color: white;
-}
-
-header img {
-    margin: 0;
-    padding: .5rem;
-    width: var(--header-height);
-}
-
-header a {
-    z-index: 15;
-    position: absolute;
     top: 0;
     left: 0;
-    width: var(--header-height);
-    height: var(--header-height);
-}
-
-#title {
-    position: absolute;
-    top: .5rem;
     width: 100%;
+    height: var(--header-height);
+    background-color: var(--primary-black);
     text-align: center;
 }
 
-#title h1 {
-    font-weight: normal;
+#logo {
+    margin: 0;
+    padding: .5rem;
+    width: var(--header-height);
+    float: left;
+}
+
+#header h1 {
+    margin: auto;
+    float: left;
+    color: white;
+    width: fit-content;
+    height: var(--header-height);
+    padding: 1.25rem 0;
+    text-align: center;
+    width: 80%;
 }
 
 /* #spacer {
@@ -134,8 +127,6 @@ header a {
     top: 0;
 }
 
-/* Nav */
-
 #navBack {
     position: fixed;
     z-index: 5;
@@ -154,8 +145,12 @@ nav {
     background-color: white;
     color: black;
     transition: all 225ms linear;
-    /* margin-top: var(--header-height); */
+    top: var(--header-height);
     right: -15rem;
+}
+
+#home h1:nth-of-type(2) {
+    display: none;
 }
 
 #navActive {
@@ -211,7 +206,6 @@ nav p {
 }
 
 /* Main + Services */
-
 
 main {
     max-width: 1200px;
@@ -272,7 +266,7 @@ footer {
 
 footer .button {
     border: .1rem solid white;
-    margin: 1rem 0 1rem 1rem;
+    margin: 1rem 0 1rem;
 }
 
 /* Hover States */
@@ -291,7 +285,7 @@ nav h1, .services p, .button h1 {
 }
 
 .button,
-header img,
+#logo,
 nav li,
 .activeLi,
 nav a, 
@@ -307,7 +301,7 @@ nav,
     -webkit-transition: all .3s ease-in-out;
 }
 
-header img:hover {
+#logo:hover {
     transform: scale(1.1);
 }
 
@@ -367,36 +361,26 @@ footer .button:hover {
     }
 
     .service p {
-        height: 2.5rem
+        height: 2.5rem;
+        line-height: 1.25rem;
     }
 }
 
-/* Media Queries: Header/Nav */
+/* Media Queries: Nav */
 
 @media only screen and (min-width: 55.625em) {
-    header {
-        width: 30vw;
-        background: none;
-        z-index: 25;
-    }
 
-    header a, header img {
+    #logo, #home svg, #home h1:nth-of-type(1), #toggleButton,
+    nav p, #navBack, #header {
         display: none;
     }
 
-    header h1 {
-        text-align: left;
-        margin: 0 2rem;
-        height: min-content;
-        transform: translateY(50%);
-    }
-
-    #toggleButton,
-    nav p, #navBack {
-        display: none;
+    #home h1:nth-of-type(2) {
+        display: block;
     }
 
     nav {
+        top: 0;
         left: 0;
         width: 100vw;
         height: var(--header-height);
@@ -405,6 +389,15 @@ footer .button:hover {
 
     nav ul {
         float: right;
+    }
+
+    #home {
+        display: block;
+        float: left;
+    }
+
+    #home h1:nth-of-type(2) {
+        width: fit-content;
     }
 
     nav li {

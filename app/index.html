@@ -31,28 +31,25 @@
 </head>
 
 <body>
-    <header>
-        <a href="#top">
-            <img src="graphics/logo.png" alt="Logo">
-        </a>
-        <div id="title">
-            <h1>
-                Hunter H Design
-            </h1>
-        </div>
-        <div id="toggleButton">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
     <div id="navBack" hidden></div>
     <nav>
         <ul>
-            <a href="#top">
+            <div id="header">
+                <a href="#top">
+                    <img id="logo" src="graphics/logo.png" alt="Logo">
+                    <h1>Hunter H Design</h1>
+                </a>
+                <div id="toggleButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <a id="home" href="#top">
                 <li>
                     <svg class="activeLi" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewbox="0 0 512 456" xml:space="preserve"><path class="st0" d="M507 180L264 3c-5-4-11-4-16 0L5 180c-5 4-7 13-2 19s12 7 18 3L256 30l235 172 8 2c4 0 8-2 10-5 5-6 4-14-2-19z"/><path class="st0" d="M442 205c-7 0-13 6-13 13v212H323V314a67 67 0 00-133 0v116H83V218c0-7-6-13-13-13s-14 6-14 13v225c1 7 7 13 14 13h133c7 0 13-5 13-12V314a40 40 0 0180 0v130c1 7 6 12 13 12h133c8 0 14-6 14-13V218c0-7-6-13-14-13z"/></svg>
                     <h1 class="activeLi">Home</h1>
+                    <h1>Hunter H Design</h1>
                 </li>
             </a>
             <a href="portfolio/portfolio.html">
@@ -87,35 +84,35 @@
         </picture>
     </div>
     <main>
-        <p>I’m a freelance designer specializing in web and graphic design based in Philadelphia.</p>
-        <h1>What I can do for you</h1>
+        <p>I’m a freelance designer specializing in Web Development and Design based in Philadelphia.</p>
+        <h1>Recent Projects</h1>
         <div class="services">
-            <a href="portfolio/webDes/webDes.html">
+            <a href="portfolio/zodiac.html">
                 <div class="service">
-                    <h2>Web Design</h2>
-                    <img src="graphics/webDes.jpg" alt="Zodiac Site">
-                    <p>Knowledge of HTML5, CSS3, and JavaScript gives me the ability to produce custom designed web presence for individuals small businesses.</p>
+                    <h2>The Chinese Zodiac</h2>
+                    <img src="graphics/zodiac_3.jpg" alt="Zodiac Graphic">
+                    <p>Focusing on JavaScript, I have created a web app that gives you your Chinese Zodiac</p>
                 </div>
             </a>
-            <a href="portfolio/digPub/digPub.html">
+            <a href="portfolio/savas.html">
+                <div class="service">
+                    <h2>Savas Brick Oven Pizza</h2>
+                    <img src="graphics/savas_2.jpg" alt="Savas Graphic">
+                    <p>Using Adobe XD, I have redesigned the website of a college student favorite in Philly</p>
+                </div>
+            </a>
+            <a href="digPub/digPub.html">
                 <div class="service">
                     <h2>Digital Publishing</h2>
-                    <img src="graphics/digPub.jpg" alt="Yosemite Flyer">
-                    <p>Experience with electronic publishing such as info graphics through typography.</p>
-                </div>
-            </a>
-            <a href="portfolio/graphics/graphics.html">
-                <div class="service">
-                    <h2>Graphics</h2>
-                    <img src="graphics/graphics.png" alt="Digital Media">
-                    <p>Experience in vector based art.</p>
+                    <img src="graphics/digPub.jpg" alt="Yosemite Brochure">
+                    <p>Typography is key. A brochure made using Adobe InDesign for Yosetmite National Park</p>
                 </div>
             </a>
         </div>
         <div class="buttonWrap">
             <a href="portfolio/portfolio.html">
                 <div class="button">
-                    <h1>View Portfolio</h1>
+                    <h1>View All Projects</h1>
                 </div>
             </a>
         </div>
@@ -151,5 +148,4 @@
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
 </body>
-
 </html>
