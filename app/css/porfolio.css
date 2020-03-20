@@ -9,6 +9,7 @@ main {
 main h1 {
     margin: 2rem 0;
     text-align: center;
+    font-size: 2rem;
 }
 
 main p, main p1, main p2 {
@@ -21,14 +22,17 @@ main p, main p1, main p2 {
 
 .service h2 {
     text-align: center;
-}
-
-.services, main {
-    padding-top: var(--header-height);
+    font-size: 1.25rem;
 }
 
 .service {
     width: 100%;
+}
+
+.service p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: .5rem 0;
 }
 
 .services a {
@@ -43,14 +47,29 @@ main p2 {
     text-decoration: underline;
 }
 
+main {
+    padding-top: var(--header-height);
+}
+
+/* Main padding-top applied when grid flexes to 3 horizontal */
+
+@media only screen and (min-width: 58.875em) {
+
+    main {
+        padding: calc(var(--header-height)*2) 2rem var(--header-height);
+    }
+}
+
 /* Footer */
 
-@media only screen and (min-width: 39.25em) {
+@media only screen and (min-width: 55.625em) {
+
     #footer_portfolio {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
+        clear: left;
     }
 }
 
@@ -78,20 +97,36 @@ main img {
 }
 
 #visit1:hover, #visit2:hover {
-    color: maroon;
+    filter: grayscale(.75);
 }
 
 /* Zodiac */
 
 @media only screen and (min-width: 55.625em) {
 
-#main_zodiac img {
-    float: left;
-    width: 33%;
-}
+    #main_zodiac p {
+        padding: 0 5rem;
+    }
+
+    #main_zodiac p:nth-of-type(2) {
+        padding-top: 2rem;
+    }
+
+    #main_zodiac img {
+        float: left;
+        width: 33%;
+    }
 }
 
 /* Savas */
+
+#main_savas p {
+    padding: 0 5rem;
+}
+
+#main_savas p:nth-of-type(2) {
+    padding-top: 2rem;
+}
 
 #main_savas li {
     list-style: disc outside none;
@@ -104,28 +139,53 @@ main img {
     margin: 1rem 0 0;
 }
 
-#main_savas img:nth-of-type(7) {
+#main_savas a:nth-of-type(7) img {
     float: right;
     width: 39.25%;
     padding: .25rem;
     margin: 0 0 1rem;
 }
 
-#main_savas img:nth-of-type(8), #main_savas img:nth-of-type(9) {
+#main_savas a:nth-of-type(8) img, #main_savas a:nth-of-type(9) img {
     float: left;
     width: 60.75%;
     padding: .25rem;
     margin: 0;
 }
 
-#main_savas img:nth-of-type(9) {
+#main_savas a:nth-of-type(9) img {
     margin: 0 0 1rem;
 }
 
 @media only screen and (min-width: 55.625em) {
-    #main_savas img:nth-of-type(1), #main_savas img:nth-of-type(2), #main_savas img:nth-of-type(3), #main_savas img:nth-of-type(4) {
+
+    #main_savas a:nth-of-type(1) img, #main_savas a:nth-of-type(2) img, #main_savas a:nth-of-type(3) img, #main_savas a:nth-of-type(4) img {
     float: left;
     width: 50%;
     }
+}
 
+/* Digital Publishing */
+
+@media only screen and (min-width: 32em) {
+
+    #main_digPub a {
+        width: 50%;
+        float: left;
+    }
+    #footer_digPub {
+        clear: left;
+    }
+}
+
+@media only screen and (min-width: 55.625em) {
+
+    #main_digPub a {
+        width: 33%;
+        filter: grayscale(1);
+    }
+
+    #main_digPub a:hover {
+        filter: none;
+    }
 }

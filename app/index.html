@@ -20,13 +20,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="graphics/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="graphics/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="graphics/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.typekit.net/qog4zfd.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -76,16 +75,16 @@
     <!-- <div id="spacer"></div> -->
     <div id="hero">
         <picture>
-            <source media="(min-width: 768px)" srcset="graphics/heroCropped.jpg" />
+            <source media="(min-width: 48em)" srcset="graphics/heroCropped.jpg" />
             <img src="graphics/hero.jpg" alt="cute kitten" />
             <div id="heroBanner">
                 <h1>Hi, I'm Hunter</h1>
             </div>
         </picture>
     </div>
-    <main>
+    <main id="main_index">
         <p>I’m a freelance designer specializing in Web Development and Design based in Philadelphia.</p>
-        <h1>Recent Projects</h1>
+        <h1 class="title">Recent Projects</h1>
         <div class="services">
             <a href="portfolio/zodiac.html">
                 <div class="service">
@@ -101,7 +100,7 @@
                     <p>Using Adobe XD, I have redesigned the website of a college student favorite in Philly</p>
                 </div>
             </a>
-            <a href="digPub/digPub.html">
+            <a href="portfolio/digPub.html">
                 <div class="service">
                     <h2>Digital Publishing</h2>
                     <img src="graphics/digPub.jpg" alt="Yosemite Brochure">
@@ -117,9 +116,9 @@
             </a>
         </div>
         <div id="resume">
-            <h1>Resume</h1>
+            <h1 class="title">Resume</h1>
             <a href="resume/resume.html">
-                <div id="picture"></div>
+                <img src="graphics/resume.jpg" alt="Resume">
             </a>
             <div class="buttonWrap">
                 <a href="resume/resume.html">

@@ -1,8 +1,10 @@
-const toggleButton = document.querySelector('#toggleButton');
+// Nav
+
+const navToggle = document.querySelector('#toggleButton');
 const nav = document.querySelector('nav');
 const navBckRnd = document.querySelector('#navBack');
 
-toggleButton.addEventListener('click', () => {
+navToggle.addEventListener('click', () => {
     if (nav.hasAttribute('id')) {
         
         nav.removeAttribute('id');

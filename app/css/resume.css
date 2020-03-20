@@ -16,6 +16,12 @@ main h1 {
     margin: 1rem 0;
 }
 
+.bold {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+}
+
 p2 {
     float: right;
 }
@@ -37,7 +43,55 @@ footer h1, footer p {
     text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+#skills_mediaQuery {
+    display: none;
+}
+
+@media only screen and (min-width: 37.5em) {
+
+    #edu_exp {
+        width: 66%;
+        float: left;
+        padding-right: 1rem;
+    }
+    #skills {
+        width: 34%;
+        float: left;
+        padding-left: 1rem;
+    }
+
+    #skills_default {
+        display: none;
+    }
+
+    #skills_mediaQuery {
+        display: block;
+    }
+
+    footer {
+        clear: left;
+    }
+
+    #skills_mediaQuery p {
+        width: 50%;
+        float: left;
+        padding: .5rem 0;
+    }
+
+    #skills_mediaQuery .bold {
+        width: 100%;
+        clear: left;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 910px) {
+    #skills_mediaQuery p {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (min-width: 48em) {
     footer h1,
     footer p {
         text-align: left;
