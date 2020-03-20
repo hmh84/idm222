@@ -1,5 +1,3 @@
-// Nav
-
 const navToggle = document.querySelector('#toggleButton');
 const nav = document.querySelector('nav');
 const navBckRnd = document.querySelector('#navBack');
